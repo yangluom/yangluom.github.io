@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/19/zt6YEIdVHbfnqPj.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/kl2zvna5HmRtSUr.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg">
-<meta property="og:updated_time" content="2019-08-24T17:48:38.845Z">
+<meta property="og:updated_time" content="2019-08-24T18:11:13.922Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello-World之后">
 <meta name="twitter:description" content="0. 前言  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：    说来，十分惭愧，这篇blog也已经从最初的8.09写到了08.12。  作为“Hello， World！”之后的第一篇博客，主要是给自己使用GitPage搭建Blog做个记录，当然，如果能够帮助到后来的小伙伴们，那就更好啦！  工欲善其事必先利其器，然额，贯于GitP">
@@ -385,6 +385,9 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 自动生成sitemap</span><br><span class="line">sitemap: </span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
 
 <p>注:上面的格式一定要正确，一定要有缩进。直接复制我的就行。<br>配置好后，执行hexo g 就能在hexo\blog\public中生成sitemap.xml和baidusitemap.xml了,其中第一个是要提交给google的，后面那个是提交给Baidu的。</p>
+<h5 id="每次生成的-CNAME-都是-yoursite-com-怎么解决？"><a href="#每次生成的-CNAME-都是-yoursite-com-怎么解决？" class="headerlink" title="每次生成的 CNAME 都是 yoursite.com 怎么解决？"></a>每次生成的 CNAME 都是 yoursite.com 怎么解决？</h5><p>之前每一次hexo d -g 都会出现访问不了网站，需要手动在github page的setting里重新设置一下，下面就是解决方案。</p>
+<p>修改 _config.yml</p>
+<p>url: <a href="http://abc123.github.io" target="_blank" rel="noopener">http://abc123.github.io</a><br>root: /<br>permalink: :year/:month/:day/:title/<br>permalink_defaults:</p>
 <h3 id="2-10-2-提交给Google站长"><a href="#2-10-2-提交给Google站长" class="headerlink" title="2.10.2 提交给Google站长"></a>2.10.2 提交给Google站长</h3><p>进入Google Search Console，相信大家都有Google账号吧。没有的话注册个账号吧，然后登录进去即可。<br>Google会让你验证你对网站的所有权，所以在这里用的是网址前缀。</p>
 <h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1><h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1>
       
