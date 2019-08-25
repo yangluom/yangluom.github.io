@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/19/zt6YEIdVHbfnqPj.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/kl2zvna5HmRtSUr.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg">
-<meta property="og:updated_time" content="2019-08-25T16:53:43.087Z">
+<meta property="og:updated_time" content="2019-08-25T17:26:03.102Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello-World之后">
 <meta name="twitter:description" content="0. 前言  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：    说来，十分惭愧，这篇blog也已经从最初的8.09写到了08.12。  作为“Hello， World！”之后的第一篇博客，主要是给自己使用GitPage搭建Blog做个记录，当然，如果能够帮助到后来的小伙伴们，那就更好啦！  工欲善其事必先利其器，然额，贯于GitP">
@@ -384,13 +384,20 @@
 </blockquote>
 <p>否则，要么找不到图片，要么，在url前面会加上“<a href="http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。" target="_blank" rel="noopener">http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。</a><br>解决后的情况就是这样了：</p>
 <p><img src="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg" alt="081.jpg"></p>
-<h2 id="2-2-增加Google-Analytics统计"><a href="#2-2-增加Google-Analytics统计" class="headerlink" title="2.2 增加Google Analytics统计"></a>2.2 增加Google Analytics统计</h2><h2 id="2-3-增加卜算子统计"><a href="#2-3-增加卜算子统计" class="headerlink" title="2.3 增加卜算子统计"></a>2.3 增加卜算子统计</h2><p>详情参考<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">搞定你的网站计数</a>，具体做法很简单，就是在你的themes/your themes/layout/_partial/footer.ejs底部加入这段脚本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="2-2-增加Google-Analytics统计"><a href="#2-2-增加Google-Analytics统计" class="headerlink" title="2.2 增加Google Analytics统计"></a>2.2 增加Google Analytics统计</h2><h2 id="2-3-增加卜算子统计"><a href="#2-3-增加卜算子统计" class="headerlink" title="2.3 增加卜算子统计"></a>2.3 增加卜算子统计</h2><p>详情参考<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">搞定你的网站计数</a>，具体做法很简单，就是在你的themes/yilia/layout/_partial/footer.ejs的“class=”footer-left””前添加脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<p>然后在</p><p class="copyright"></p>中间添加如下统计信息即可<p></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次, 访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; 人次, 本文总阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
+<p>然后在该文件的以下位置的下面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;footer-right&quot;&gt;</span><br><span class="line">	&lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot;&gt;Hexo&lt;/a&gt;  Theme &lt;a href=&quot;https://github.com/litten/hexo-theme-yilia&quot; target=&quot;_blank&quot;&gt;Yilia&lt;/a&gt; by Litten</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
-<p>不蒜子的官方服务网站是<a href="http://service.ibruce.info/" target="_blank" rel="noopener">不蒜子</a>，目前最大的弊端就是不开放注册，所以对于运行了一段时间的网站，不蒜子的数据都是从1开始，没办法设置，只有等后期开放注册之后，登入网站才能对统计计数进行设置。</p>
+<p>添加如下统计信息即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;powered-by&quot;&gt;</span><br><span class="line">      &lt;span id=&quot;busuanzi_container_site_uv&quot;&gt;</span><br><span class="line">          本站总访客:&lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; ||</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">      &lt;span id=&quot;busuanzi_container_site_pv&quot;&gt;</span><br><span class="line">          本站总访问量:&lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt;次 ||</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">      &lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;</span><br><span class="line">          本文总访问量:&lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;次</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>然后就可以</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>在本地查看啦，如果你发现数字很大，那是因为本地的测试地址大家都一样，你上传到github，再打开你的域名地址就会发现从0开始了！</p>
+<p>目前的问题是，不蒜子的官方服务网站是<a href="http://service.ibruce.info/" target="_blank" rel="noopener">不蒜子</a>，目前最大的弊端就是不开放注册，所以对于运行了一段时间的网站，不蒜子的数据都是从1开始，没办法设置，只有等后期开放注册之后，登入网站才能对统计计数进行设置。</p>
 <h2 id="2-4-增加头像旋转动画"><a href="#2-4-增加头像旋转动画" class="headerlink" title="2.4 增加头像旋转动画"></a>2.4 增加头像旋转动画</h2><p>在themes\yilia\source\文件夹下新建一个css文件avatarrotation.css用来旋转360度<br>内容如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.left-col #header .profilepic img &#123;</span><br><span class="line">	/* 控制旋转速度时间*/</span><br><span class="line">  -webkit-transition: -webkit-transform 1.0s ease-out;</span><br><span class="line">  -moz-transition: -moz-transform 1.0s ease-out;</span><br><span class="line">  transition: transform 1.0s ease-out;</span><br><span class="line">&#125;</span><br><span class="line">.left-col #header .profilepic img:hover &#123;</span><br><span class="line">	/* 鼠标经过360% */</span><br><span class="line">  -webkit-transform: rotateZ(360deg);</span><br><span class="line">  -moz-transform: rotateZ(360deg);</span><br><span class="line">  transform: rotateZ(360deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -575,12 +582,24 @@
       <footer id="footer">
   <div class="outer">
     <div id="footer-info">
+        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     	<div class="footer-left">
     		&copy; 2019 Yang Lu
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
       	</div>
+     	<div class="powered-by">
+            <span id="busuanzi_container_site_uv">
+                本站总访客:<span id="busuanzi_value_site_uv"></span> ||
+            </span>
+            <span id="busuanzi_container_site_pv">
+                本站总访问量:<span id="busuanzi_value_site_pv"></span>次 ||
+            </span>
+            <span id="busuanzi_container_page_pv">
+                本文总访问量:<span id="busuanzi_value_page_pv"></span>次
+            </span>
+        </div>
     </div>
   </div>
 </footer>
