@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/19/zt6YEIdVHbfnqPj.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/kl2zvna5HmRtSUr.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg">
-<meta property="og:updated_time" content="2019-08-25T15:25:41.212Z">
+<meta property="og:updated_time" content="2019-08-25T16:53:43.087Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello-World之后">
 <meta name="twitter:description" content="0. 前言  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：    说来，十分惭愧，这篇blog也已经从最初的8.09写到了08.12。  作为“Hello， World！”之后的第一篇博客，主要是给自己使用GitPage搭建Blog做个记录，当然，如果能够帮助到后来的小伙伴们，那就更好啦！  工欲善其事必先利其器，然额，贯于GitP">
@@ -41,6 +41,9 @@
     <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
+    
+  	<link rel="stylesheet" type="text/css" href="/./avatarrotation.css">
+    
   <style type="text/css">
   
     #container.show {
@@ -388,7 +391,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次, 访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; 人次, 本文总阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
 
 <p>不蒜子的官方服务网站是<a href="http://service.ibruce.info/" target="_blank" rel="noopener">不蒜子</a>，目前最大的弊端就是不开放注册，所以对于运行了一段时间的网站，不蒜子的数据都是从1开始，没办法设置，只有等后期开放注册之后，登入网站才能对统计计数进行设置。</p>
-<h2 id="2-4-增加头像旋转动画"><a href="#2-4-增加头像旋转动画" class="headerlink" title="2.4 增加头像旋转动画"></a>2.4 增加头像旋转动画</h2><h2 id="2-5-增加头像旋转动画"><a href="#2-5-增加头像旋转动画" class="headerlink" title="2.5 增加头像旋转动画"></a>2.5 增加头像旋转动画</h2><h2 id="2-6-增加文章打开的动画"><a href="#2-6-增加文章打开的动画" class="headerlink" title="2.6 增加文章打开的动画"></a>2.6 增加文章打开的动画</h2><h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-增加文档目录（toc-true可开启）"><a href="#2-8-增加文档目录（toc-true可开启）" class="headerlink" title="2.8 增加文档目录（toc: true可开启）"></a>2.8 增加文档目录（toc: true可开启）</h2><h2 id="2-9-增加版权声明（declare-true可开启）"><a href="#2-9-增加版权声明（declare-true可开启）" class="headerlink" title="2.9 增加版权声明（declare: true可开启）"></a>2.9 增加版权声明（declare: true可开启）</h2><h2 id="2-10-增加Google和百度收录"><a href="#2-10-增加Google和百度收录" class="headerlink" title="2.10 增加Google和百度收录"></a>2.10 增加Google和百度收录</h2><h3 id="2-10-1-提交给Google站长"><a href="#2-10-1-提交给Google站长" class="headerlink" title="2.10.1 提交给Google站长"></a>2.10.1 提交给Google站长</h3><h4 id="2-10-1-1-添加网址"><a href="#2-10-1-1-添加网址" class="headerlink" title="2.10.1.1 添加网址"></a>2.10.1.1 添加网址</h4><p>安装sitemap站点地图自动生成插件</p>
+<h2 id="2-4-增加头像旋转动画"><a href="#2-4-增加头像旋转动画" class="headerlink" title="2.4 增加头像旋转动画"></a>2.4 增加头像旋转动画</h2><p>在themes\yilia\source\文件夹下新建一个css文件avatarrotation.css用来旋转360度<br>内容如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">.left-col #header .profilepic img &#123;</span><br><span class="line">	/* 控制旋转速度时间*/</span><br><span class="line">  -webkit-transition: -webkit-transform 1.0s ease-out;</span><br><span class="line">  -moz-transition: -moz-transform 1.0s ease-out;</span><br><span class="line">  transition: transform 1.0s ease-out;</span><br><span class="line">&#125;</span><br><span class="line">.left-col #header .profilepic img:hover &#123;</span><br><span class="line">	/* 鼠标经过360% */</span><br><span class="line">  -webkit-transform: rotateZ(360deg);</span><br><span class="line">  -moz-transform: rotateZ(360deg);</span><br><span class="line">  transform: rotateZ(360deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后在themes\yilia\layout_partial\head.ejs文件中添加创建的css文件：<br>找到&lt;%- partial(‘css’) %&gt;，在它的下面添加代码，把刚才写的文件添加进去，注意！！是在”&lt;%- partial(‘css’) %&gt;”这行的下面添加，否则，你懂的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.avatarrotation)&#123; %&gt;</span><br><span class="line">	&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/./avatarrotation.css&quot;&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>最后在主题文件hexo\blog\themes\yilia\_config.yml中的结尾添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#头像是否旋转(如果不要旋转取false)</span><br><span class="line">avatarrotation: true</span><br></pre></td></tr></table></figure>
+
+<p>头像就可以旋转了！</p>
+<h2 id="2-5-增加头像旋转动画"><a href="#2-5-增加头像旋转动画" class="headerlink" title="2.5 增加头像旋转动画"></a>2.5 增加头像旋转动画</h2><h2 id="2-6-增加文章打开的动画"><a href="#2-6-增加文章打开的动画" class="headerlink" title="2.6 增加文章打开的动画"></a>2.6 增加文章打开的动画</h2><h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-增加文档目录（toc-true可开启）"><a href="#2-8-增加文档目录（toc-true可开启）" class="headerlink" title="2.8 增加文档目录（toc: true可开启）"></a>2.8 增加文档目录（toc: true可开启）</h2><h2 id="2-9-增加版权声明（declare-true可开启）"><a href="#2-9-增加版权声明（declare-true可开启）" class="headerlink" title="2.9 增加版权声明（declare: true可开启）"></a>2.9 增加版权声明（declare: true可开启）</h2><h2 id="2-10-增加Google和百度收录"><a href="#2-10-增加Google和百度收录" class="headerlink" title="2.10 增加Google和百度收录"></a>2.10 增加Google和百度收录</h2><h3 id="2-10-1-提交给Google站长"><a href="#2-10-1-提交给Google站长" class="headerlink" title="2.10.1 提交给Google站长"></a>2.10.1 提交给Google站长</h3><h4 id="2-10-1-1-添加网址"><a href="#2-10-1-1-添加网址" class="headerlink" title="2.10.1.1 添加网址"></a>2.10.1.1 添加网址</h4><p>安装sitemap站点地图自动生成插件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
 
 <p>在站点配置文件hexo\blog\themes\yilia_config.yml中添加</p>
@@ -397,8 +410,10 @@
 <p>注:上面的格式一定要正确，一定要有缩进。直接复制我的就行。<br>配置好后，执行hexo g 就能在hexo\blog\public中生成sitemap.xml和baidusitemap.xml了,其中第一个是要提交给google的，后面那个是提交给Baidu的。</p>
 <h5 id="每次生成的-CNAME-都是-yoursite-com-怎么解决？"><a href="#每次生成的-CNAME-都是-yoursite-com-怎么解决？" class="headerlink" title="每次生成的 CNAME 都是 yoursite.com 怎么解决？"></a>每次生成的 CNAME 都是 yoursite.com 怎么解决？</h5><p>之前每一次hexo d -g 都会出现访问不了网站，需要手动在github page的setting里重新设置一下，下面就是解决方案。</p>
 <p>修改 _config.yml</p>
-<p>url: <a href="http://abc123.github.io" target="_blank" rel="noopener">http://abc123.github.io</a><br>root: /<br>permalink: :year/:month/:day/:title/<br>permalink_defaults:</p>
-<h3 id="2-10-2-提交给Google站长"><a href="#2-10-2-提交给Google站长" class="headerlink" title="2.10.2 提交给Google站长"></a>2.10.2 提交给Google站长</h3><p>进入Google Search Console，相信大家都有Google账号吧。没有的话注册个账号吧，然后登录进去即可。<br>Google会让你验证你对网站的所有权，所以在这里用的是网址前缀。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url: http://abc123.github.io</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-10-2-提交给Google站长"><a href="#2-10-2-提交给Google站长" class="headerlink" title="2.10.2 提交给Google站长"></a>2.10.2 提交给Google站长</h3><p>进入Google Search Console，相信大家都有Google账号吧。没有的话注册个账号吧，然后登录进去即可。</p>
+<p>Google会让你验证你对网站的所有权，所以在这里用的是网址前缀。</p>
 <h1 id="未完待续"><a href="#未完待续" class="headerlink" title="未完待续"></a>未完待续</h1><h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1>
       
 
@@ -569,7 +584,7 @@
     </div>
   </div>
 </footer>
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -764,7 +779,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">力求识深浅&lt;br&gt;&lt;br&gt;争取分轻重</div>
   	  	
     	</section>
     
