@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/19/zt6YEIdVHbfnqPj.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/kl2zvna5HmRtSUr.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg">
-<meta property="og:updated_time" content="2019-08-24T18:11:13.922Z">
+<meta property="og:updated_time" content="2019-08-25T15:25:41.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello-World之后">
 <meta name="twitter:description" content="0. 前言  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：    说来，十分惭愧，这篇blog也已经从最初的8.09写到了08.12。  作为“Hello， World！”之后的第一篇博客，主要是给自己使用GitPage搭建Blog做个记录，当然，如果能够帮助到后来的小伙伴们，那就更好啦！  工欲善其事必先利其器，然额，贯于GitP">
@@ -201,6 +201,9 @@
         
       </header>
     
+	<!-- 在这里添加版权内容-->
+        
+    <!--添加版权内容结束-->
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="0-前言"><a href="#0-前言" class="headerlink" title="0. 前言"></a>0. 前言</h1><p>  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：</p>
@@ -378,7 +381,14 @@
 </blockquote>
 <p>否则，要么找不到图片，要么，在url前面会加上“<a href="http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。" target="_blank" rel="noopener">http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。</a><br>解决后的情况就是这样了：</p>
 <p><img src="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg" alt="081.jpg"></p>
-<h2 id="2-2-增加Google-Analytics统计"><a href="#2-2-增加Google-Analytics统计" class="headerlink" title="2.2 增加Google Analytics统计"></a>2.2 增加Google Analytics统计</h2><h2 id="2-3-增加卜算子统计"><a href="#2-3-增加卜算子统计" class="headerlink" title="2.3 增加卜算子统计"></a>2.3 增加卜算子统计</h2><h2 id="2-4-增加头像旋转动画"><a href="#2-4-增加头像旋转动画" class="headerlink" title="2.4 增加头像旋转动画"></a>2.4 增加头像旋转动画</h2><h2 id="2-5-增加头像旋转动画"><a href="#2-5-增加头像旋转动画" class="headerlink" title="2.5 增加头像旋转动画"></a>2.5 增加头像旋转动画</h2><h2 id="2-6-增加文章打开的动画"><a href="#2-6-增加文章打开的动画" class="headerlink" title="2.6 增加文章打开的动画"></a>2.6 增加文章打开的动画</h2><h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-增加文档目录（toc-true可开启）"><a href="#2-8-增加文档目录（toc-true可开启）" class="headerlink" title="2.8 增加文档目录（toc: true可开启）"></a>2.8 增加文档目录（toc: true可开启）</h2><h2 id="2-9-增加版权声明（declare-true可开启）"><a href="#2-9-增加版权声明（declare-true可开启）" class="headerlink" title="2.9 增加版权声明（declare: true可开启）"></a>2.9 增加版权声明（declare: true可开启）</h2><h2 id="2-10-增加Google和百度收录"><a href="#2-10-增加Google和百度收录" class="headerlink" title="2.10 增加Google和百度收录"></a>2.10 增加Google和百度收录</h2><h3 id="2-10-1-提交给Google站长"><a href="#2-10-1-提交给Google站长" class="headerlink" title="2.10.1 提交给Google站长"></a>2.10.1 提交给Google站长</h3><h4 id="2-10-1-1-添加网址"><a href="#2-10-1-1-添加网址" class="headerlink" title="2.10.1.1 添加网址"></a>2.10.1.1 添加网址</h4><p>安装sitemap站点地图自动生成插件</p>
+<h2 id="2-2-增加Google-Analytics统计"><a href="#2-2-增加Google-Analytics统计" class="headerlink" title="2.2 增加Google Analytics统计"></a>2.2 增加Google Analytics统计</h2><h2 id="2-3-增加卜算子统计"><a href="#2-3-增加卜算子统计" class="headerlink" title="2.3 增加卜算子统计"></a>2.3 增加卜算子统计</h2><p>详情参考<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="noopener">搞定你的网站计数</a>，具体做法很简单，就是在你的themes/your themes/layout/_partial/footer.ejs底部加入这段脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>然后在</p><p class="copyright"></p>中间添加如下统计信息即可<p></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">本站总访问量 &lt;span id=&quot;busuanzi_value_site_pv&quot;&gt;&lt;/span&gt; 次, 访客数 &lt;span id=&quot;busuanzi_value_site_uv&quot;&gt;&lt;/span&gt; 人次, 本文总阅读量 &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt; 次</span><br></pre></td></tr></table></figure>
+
+<p>不蒜子的官方服务网站是<a href="http://service.ibruce.info/" target="_blank" rel="noopener">不蒜子</a>，目前最大的弊端就是不开放注册，所以对于运行了一段时间的网站，不蒜子的数据都是从1开始，没办法设置，只有等后期开放注册之后，登入网站才能对统计计数进行设置。</p>
+<h2 id="2-4-增加头像旋转动画"><a href="#2-4-增加头像旋转动画" class="headerlink" title="2.4 增加头像旋转动画"></a>2.4 增加头像旋转动画</h2><h2 id="2-5-增加头像旋转动画"><a href="#2-5-增加头像旋转动画" class="headerlink" title="2.5 增加头像旋转动画"></a>2.5 增加头像旋转动画</h2><h2 id="2-6-增加文章打开的动画"><a href="#2-6-增加文章打开的动画" class="headerlink" title="2.6 增加文章打开的动画"></a>2.6 增加文章打开的动画</h2><h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-增加文档目录（toc-true可开启）"><a href="#2-8-增加文档目录（toc-true可开启）" class="headerlink" title="2.8 增加文档目录（toc: true可开启）"></a>2.8 增加文档目录（toc: true可开启）</h2><h2 id="2-9-增加版权声明（declare-true可开启）"><a href="#2-9-增加版权声明（declare-true可开启）" class="headerlink" title="2.9 增加版权声明（declare: true可开启）"></a>2.9 增加版权声明（declare: true可开启）</h2><h2 id="2-10-增加Google和百度收录"><a href="#2-10-增加Google和百度收录" class="headerlink" title="2.10 增加Google和百度收录"></a>2.10 增加Google和百度收录</h2><h3 id="2-10-1-提交给Google站长"><a href="#2-10-1-提交给Google站长" class="headerlink" title="2.10.1 提交给Google站长"></a>2.10.1 提交给Google站长</h3><h4 id="2-10-1-1-添加网址"><a href="#2-10-1-1-添加网址" class="headerlink" title="2.10.1.1 添加网址"></a>2.10.1.1 添加网址</h4><p>安装sitemap站点地图自动生成插件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
 
 <p>在站点配置文件hexo\blog\themes\yilia_config.yml中添加</p>
@@ -559,6 +569,7 @@
     </div>
   </div>
 </footer>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     </div>
     <script>
 	var yiliaConfig = {
