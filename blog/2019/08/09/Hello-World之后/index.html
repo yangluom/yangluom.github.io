@@ -64,6 +64,10 @@
 
   
 
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
 </head>
 </html>
 <body>
@@ -120,13 +124,20 @@
 					<a class="rss" target="_blank" href="https://yangluom.github.io/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
 			</div>
-		</nav>
-		<nav class="header-music">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=260 height=52 src="//music.163.com/outchain/player?type=0&id=113822843&auto=1&height=32"></iframe>
-		</nav>
 	</header>		
 </div>
 
+	  <div class="aplayer"
+        data-id="113822843"
+        data-server="netease"    //可以更改为其他
+        data-type="playlist"     //可以切换单曲或歌单
+        data-list-max-height="199px"  //如果为歌单，规定歌单最大长度
+        data-list-folded="true"  //歌单折叠
+        data-preload="auto"      //歌单预载
+        data-loop="all"          //歌单循环
+        data-autoplay=“true”    //自动播放
+        style="top:23%;">
+      </div>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
