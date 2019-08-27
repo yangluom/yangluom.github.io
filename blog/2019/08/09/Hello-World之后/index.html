@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
@@ -29,7 +30,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/19/zt6YEIdVHbfnqPj.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/kl2zvna5HmRtSUr.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg">
-<meta property="og:updated_time" content="2019-08-25T17:30:00.732Z">
+<meta property="og:updated_time" content="2019-08-27T18:49:43.021Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello-World之后">
 <meta name="twitter:description" content="0. 前言  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：    说来，十分惭愧，这篇blog也已经从最初的8.09写到了08.12。  作为“Hello， World！”之后的第一篇博客，主要是给自己使用GitPage搭建Blog做个记录，当然，如果能够帮助到后来的小伙伴们，那就更好啦！  工欲善其事必先利其器，然额，贯于GitP">
@@ -73,9 +74,9 @@
 <body>
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
-    <div class="left-col" q-class="show:isShow">
+    <div class="left-col" q-class="show:isShow" style="background: url(/img/backgroud.png)no-repeat 100%;background-size:cover;">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: #00000"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -142,7 +143,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #00000"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -215,6 +216,27 @@
         <a href="/blog/2019/08/09/Hello-World之后/" class="archive-article-date">
   	<time datetime="2019-08-09T14:06:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-09</time>
 </a>
+		
+          <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
+        <!--这里样式可以自己定制-->
+        <span class="post-count" style="font-size: 16px;color: grey">6.8k字</span>
+      </span>
+    </span>
+    
+    <span class="post-time">
+      &nbsp; | &nbsp;
+      <span class="post-meta-item-icon">
+        <i class="fa fa-hourglass-half"></i>
+        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
+        <span class="post-count" style="font-size: 16px;color: grey">32分</span>
+      </span>
+    </span>
+</div>
+          
         
       </header>
     
@@ -394,11 +416,25 @@
 <p>成功预览文章！</p>
 <h1 id="2-其他进阶设置"><a href="#2-其他进阶设置" class="headerlink" title="2. 其他进阶设置"></a>2. 其他进阶设置</h1><h2 id="2-1-头像设置"><a href="#2-1-头像设置" class="headerlink" title="2.1 头像设置"></a>2.1 头像设置</h2><p>是滴，我，算是每一步都碰壁了吧。。。。。<br>头像设置照样搞了几天才在<a href="https://www.xiongtianci.com/2019/06/13/%E6%89%93%E9%80%A0%E4%B8%AA%E6%80%A7%E8%B6%85%E8%B5%9E%E5%8D%9A%E5%AE%A2Hexo-NexT-GitHub-Pages%E7%9A%84%E8%B6%85%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%8C%96/" target="_blank" rel="noopener">xiongtianci</a>的po文中找到了头像图片的位置的正确描述形式！</p>
 <blockquote>
-<p>avatar: /images/avatar.gif</p>
+<p>avatar: /img/avatar.jpg</p>
 </blockquote>
-<p>否则，要么找不到图片，要么，在url前面会加上“<a href="http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。" target="_blank" rel="noopener">http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。</a><br>解决后的情况就是这样了：</p>
+<p>实际路径是“themes/yilia/source/img/avatar.gif”, 但此处应写成“/img/avatar.jpg”<br>否则，要么找不到图片，要么，在url前面会加上“<a href="http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。" target="_blank" rel="noopener">http://localhost:4000/”的路径，是滴，那种情况下，头像依然看不到。。。。</a><br>解决后的情况就是这样了：</p>
 <p><img src="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg" alt="081.jpg"></p>
-<h2 id="2-2-增加Google-Analytics统计"><a href="#2-2-增加Google-Analytics统计" class="headerlink" title="2.2 增加Google Analytics统计"></a>2.2 增加Google Analytics统计</h2><h2 id="2-3-增加卜算子统计"><a href="#2-3-增加卜算子统计" class="headerlink" title="2.3 增加卜算子统计"></a>2.3 增加卜算子统计</h2><p>主要参考Rayqian的博客<a href="https://qianlei6148.github.io/2018/10/09/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/" target="_blank" rel="noopener">hexo模版yilia添加访问量</a>实现，具体做法很简单，就是在你的themes/yilia/layout/_partial/footer.ejs的“class=”footer-left””前添加脚本</p>
+<h2 id="2-2-增加字数、阅读时长统计"><a href="#2-2-增加字数、阅读时长统计" class="headerlink" title="2.2 增加字数、阅读时长统计"></a>2.2 增加字数、阅读时长统计</h2><p>打开博客根目录、安装插件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -save hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<p>博客根目录_config.yml添加配置:</p>
+<blockquote>
+<p>word_count: true</p>
+</blockquote>
+<p>找到themes\yilia\layout_partial\article.ejs,在大概第七行</p>
+<blockquote>
+<p>&lt;%- partial(‘post/date’, {class_name: ‘archive-article-date’, date_format: null}) %&gt;</p>
+</blockquote>
+<p>下面添加代码:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if(theme.word_count &amp;&amp; !post.no_word_count)&#123;%&gt;</span><br><span class="line">          &lt;%- partial('post/word') %&gt;</span><br><span class="line">          &lt;% &#125; %&gt;</span><br><span class="line">最后在themes\yilia\layout\_partial\post目录下新建word.ejs,内容如下：</span><br><span class="line"></span><br><span class="line">&lt;div style="margin-top:10px;"&gt;</span><br><span class="line">    &lt;span class="post-time"&gt;</span><br><span class="line">      &lt;span class="post-meta-item-icon"&gt;</span><br><span class="line">        &lt;i class="fa fa-keyboard-o"&gt;&lt;/i&gt;</span><br><span class="line">        &lt;span class="post-meta-item-text" style="font-size: 16px;color: grey"&gt;  字数统计: &lt;/span&gt;</span><br><span class="line">        &lt;!--这里样式可以自己定制--&gt;</span><br><span class="line">        &lt;span class="post-count" style="font-size: 16px;color: grey"&gt;&lt;%= wordcount(post.content) %&gt;字&lt;/span&gt;</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">    &lt;/span&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;span class="post-time"&gt;</span><br><span class="line">      &amp;nbsp; | &amp;nbsp;</span><br><span class="line">      &lt;span class="post-meta-item-icon"&gt;</span><br><span class="line">        &lt;i class="fa fa-hourglass-half"&gt;&lt;/i&gt;</span><br><span class="line">        &lt;span class="post-meta-item-text" style="font-size: 16px;color: grey"&gt;  阅读时长: &lt;/span&gt;</span><br><span class="line">        &lt;span class="post-count" style="font-size: 16px;color: grey"&gt;&lt;%= min2read(post.content) %&gt;分&lt;/span&gt;</span><br><span class="line">      &lt;/span&gt;</span><br><span class="line">    &lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3-增加卜算子统计"><a href="#2-3-增加卜算子统计" class="headerlink" title="2.3 增加卜算子统计"></a>2.3 增加卜算子统计</h2><p>主要参考Rayqian的博客<a href="https://qianlei6148.github.io/2018/10/09/hexo%E6%A8%A1%E7%89%88yilia%E6%B7%BB%E5%8A%A0%E8%AE%BF%E9%97%AE%E9%87%8F/" target="_blank" rel="noopener">hexo模版yilia添加访问量</a>实现，具体做法很简单，就是在你的themes/yilia/layout/_partial/footer.ejs的“class=”footer-left””前添加脚本</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script async src=&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
 <p>然后在该文件的以下位置的下面</p>
@@ -422,7 +458,31 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#头像是否旋转(如果不要旋转取false)</span><br><span class="line">avatarrotation: true</span><br></pre></td></tr></table></figure>
 
 <p>头像就可以旋转了！</p>
-<h2 id="2-5-增加头像旋转动画"><a href="#2-5-增加头像旋转动画" class="headerlink" title="2.5 增加头像旋转动画"></a>2.5 增加头像旋转动画</h2><h2 id="2-6-增加文章打开的动画"><a href="#2-6-增加文章打开的动画" class="headerlink" title="2.6 增加文章打开的动画"></a>2.6 增加文章打开的动画</h2><h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-增加文档目录（toc-true可开启）"><a href="#2-8-增加文档目录（toc-true可开启）" class="headerlink" title="2.8 增加文档目录（toc: true可开启）"></a>2.8 增加文档目录（toc: true可开启）</h2><h2 id="2-9-增加版权声明（declare-true可开启）"><a href="#2-9-增加版权声明（declare-true可开启）" class="headerlink" title="2.9 增加版权声明（declare: true可开启）"></a>2.9 增加版权声明（declare: true可开启）</h2><h2 id="2-10-增加Google和百度收录"><a href="#2-10-增加Google和百度收录" class="headerlink" title="2.10 增加Google和百度收录"></a>2.10 增加Google和百度收录</h2><h3 id="2-10-1-提交给Google站长"><a href="#2-10-1-提交给Google站长" class="headerlink" title="2.10.1 提交给Google站长"></a>2.10.1 提交给Google站长</h3><h4 id="2-10-1-1-添加网址"><a href="#2-10-1-1-添加网址" class="headerlink" title="2.10.1.1 添加网址"></a>2.10.1.1 添加网址</h4><p>安装sitemap站点地图自动生成插件</p>
+<h2 id="2-5-增加文章目录"><a href="#2-5-增加文章目录" class="headerlink" title="2.5 增加文章目录"></a>2.5 增加文章目录</h2><p>直接在yilia目录下的_config.yml配置toc属性即可</p>
+<blockquote>
+<p>toc: 0    #不开启目录<br>toc: 1    #文章.md文件添加”toc:true”属性的才有目录<br>toc: 2    #所有文章开启目录</p>
+</blockquote>
+<p>注意！！！文章Markdown文件一定要从一级标题开始写，直接从二级标题无法生成目录！！！</p>
+<h2 id="2-6-增加文章打开的动画"><a href="#2-6-增加文章打开的动画" class="headerlink" title="2.6 增加文章打开的动画"></a>2.6 增加文章打开的动画</h2><h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-Yilia主题自定义左侧背景图片"><a href="#2-8-Yilia主题自定义左侧背景图片" class="headerlink" title="2.8 Yilia主题自定义左侧背景图片"></a>2.8 Yilia主题自定义左侧背景图片</h2><p>yilia模版左侧背景需要的话可以自己设置<br>首先打开themes\yilia\layout\layout.ejs<br>在最上面添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% var left_default = &apos;#fff&apos;; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>作为默认值，如果你不加图片，就会默认为白色<br>接着在layout.ejs文件中找到</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;left-col&quot; q-class=&quot;show:isShow&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在其中为它添加内联样式,结果如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;left-col&quot; q-class=&quot;show:isShow&quot; style=&quot;background: &lt;%= theme.style &amp;&amp; theme.style.left_ground ? theme.style.left_ground : left_default %&gt;&quot;&gt;</span><br></pre></td></tr></table></figure>
+
+<p>其中theme.style.left_ground中的left_ground就是主题配置文件_config.yml中style下的你所要添加的名称。<br>最后在主题的themes\yilia_config.yml中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 头像上面的背景颜色</span><br><span class="line"> header: &apos;rgba(0,0,0,0)&apos; #设置背景透明，不然头像上方是默认色</span><br><span class="line">#左侧头像板块的背景颜色</span><br><span class="line"> left_ground: &apos;url(/img/background.png)no-repeat 100%;background-size:cover;&apos;</span><br></pre></td></tr></table></figure>
+
+
+<p>图像大小建议宽度490像素，高度1080像素</p>
+<p>当然，如果需要修改左侧自己的名字、主页等字体的颜色的话，可以在\blog\themes\yilia\source\main.xxxxxx.css中搜索：</p>
+<blockquote>
+<p>.left-col #header a{color:</p>
+</blockquote>
+<p>将后面的#号后面的数字改成自己期望的字体颜色即可。<br>main.xxxxxx.css中xxxxxx是你自己的main.css文件之间的数字！</p>
+<h2 id="2-9-增加版权声明（declare-true可开启）"><a href="#2-9-增加版权声明（declare-true可开启）" class="headerlink" title="2.9 增加版权声明（declare: true可开启）"></a>2.9 增加版权声明（declare: true可开启）</h2><h2 id="2-10-增加Google和百度收录"><a href="#2-10-增加Google和百度收录" class="headerlink" title="2.10 增加Google和百度收录"></a>2.10 增加Google和百度收录</h2><h3 id="2-10-1-提交给Google站长"><a href="#2-10-1-提交给Google站长" class="headerlink" title="2.10.1 提交给Google站长"></a>2.10.1 提交给Google站长</h3><h4 id="2-10-1-1-添加网址"><a href="#2-10-1-1-添加网址" class="headerlink" title="2.10.1.1 添加网址"></a>2.10.1.1 添加网址</h4><p>安装sitemap站点地图自动生成插件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
 
 <p>在站点配置文件hexo\blog\themes\yilia_config.yml中添加</p>
@@ -574,6 +634,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#0-前言"><span class="toc-number">1.</span> <span class="toc-text">0. 前言</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#本文主要参考以下文章实现"><span class="toc-number">1.1.</span> <span class="toc-text">本文主要参考以下文章实现</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-步骤"><span class="toc-number">2.</span> <span class="toc-text">1. 步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1-申请Github账号，并创建自己博客的Repositories"><span class="toc-number">2.1.</span> <span class="toc-text">1.1 申请Github账号，并创建自己博客的Repositories</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2-在本地下载、安装Hexo"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 在本地下载、安装Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1-安装Node-js"><span class="toc-number">2.2.1.</span> <span class="toc-text">1.2.1 安装Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2-安装Git"><span class="toc-number">2.2.2.</span> <span class="toc-text">1.2.2 安装Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-安装Hexo"><span class="toc-number">2.2.3.</span> <span class="toc-text">1.2.3 安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-4-Hexo主题设置"><span class="toc-number">2.2.4.</span> <span class="toc-text">1.2.4 Hexo主题设置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-4-1-安装主题"><span class="toc-number">2.2.4.1.</span> <span class="toc-text">1.2.4.1 安装主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-4-2-更新主题"><span class="toc-number">2.2.4.2.</span> <span class="toc-text">1.2.4.2 更新主题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3-本地Hexo部署到Github"><span class="toc-number">2.3.</span> <span class="toc-text">1.3. 本地Hexo部署到Github</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-1-使用hexo-deploy部署"><span class="toc-number">2.3.1.</span> <span class="toc-text">1.3.1. 使用hexo deploy部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4-开始“Hello，-World”之后的第一篇博客"><span class="toc-number">2.4.</span> <span class="toc-text">1.4. 开始“Hello， World”之后的第一篇博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-1-配置文件命名规则和路由地址"><span class="toc-number">2.4.1.</span> <span class="toc-text">1.4.1 配置文件命名规则和路由地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-2-创建博客"><span class="toc-number">2.4.2.</span> <span class="toc-text">1.4.2 创建博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-3-写作"><span class="toc-number">2.4.3.</span> <span class="toc-text">1.4.3 写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-4-发布"><span class="toc-number">2.4.4.</span> <span class="toc-text">1.4.4 发布</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-其他进阶设置"><span class="toc-number">3.</span> <span class="toc-text">2. 其他进阶设置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1-头像设置"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 头像设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2-增加字数、阅读时长统计"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 增加字数、阅读时长统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-增加卜算子统计"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 增加卜算子统计</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4-增加头像旋转动画"><span class="toc-number">3.4.</span> <span class="toc-text">2.4 增加头像旋转动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-5-增加文章目录"><span class="toc-number">3.5.</span> <span class="toc-text">2.5 增加文章目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-6-增加文章打开的动画"><span class="toc-number">3.6.</span> <span class="toc-text">2.6 增加文章打开的动画</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-7-增加了一个分类页面"><span class="toc-number">3.7.</span> <span class="toc-text">2.7 增加了一个分类页面</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-8-Yilia主题自定义左侧背景图片"><span class="toc-number">3.8.</span> <span class="toc-text">2.8 Yilia主题自定义左侧背景图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-9-增加版权声明（declare-true可开启）"><span class="toc-number">3.9.</span> <span class="toc-text">2.9 增加版权声明（declare: true可开启）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-10-增加Google和百度收录"><span class="toc-number">3.10.</span> <span class="toc-text">2.10 增加Google和百度收录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-1-提交给Google站长"><span class="toc-number">3.10.1.</span> <span class="toc-text">2.10.1 提交给Google站长</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-10-1-1-添加网址"><span class="toc-number">3.10.1.1.</span> <span class="toc-text">2.10.1.1 添加网址</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#每次生成的-CNAME-都是-yoursite-com-怎么解决？"><span class="toc-number">3.10.1.1.1.</span> <span class="toc-text">每次生成的 CNAME 都是 yoursite.com 怎么解决？</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-2-提交给Google站长"><span class="toc-number">3.10.2.</span> <span class="toc-text">2.10.2 提交给Google站长</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#未完待续"><span class="toc-number">4.</span> <span class="toc-text">未完待续</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-总结"><span class="toc-number">5.</span> <span class="toc-text">3. 总结</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -713,14 +786,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">blog</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">GitPage</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">科研</a>
               </li>
              
@@ -730,6 +795,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Nature</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">blog</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">GitPage</a>
               </li>
             
             <div class="clearfix"></div>
@@ -812,7 +885,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">力求识深浅&lt;br&gt;&lt;br&gt;争取分轻重</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">天坑专业从业然道行尚浅，唯有好奇与热情，喜观世之过往又好察己之将来&lt;br&gt;&lt;br&gt;&lt;br&gt;困知格浅致深&lt;br&gt;&lt;br&gt;勉行辨末就本</div>
   	  	
     	</section>
     
