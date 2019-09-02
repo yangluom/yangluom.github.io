@@ -37,11 +37,6 @@
   
   
   
-    <link rel="stylesheet" href="/lib/gitalk/gitalk.css">
-    <script src="/lib/gitalk/gitalk.min.js"></script>
-  
-  
-  
     <link rel="icon" href="/favicon.png">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
@@ -543,22 +538,25 @@
 
 
   
-  <div class="gitalk">
-    <div id="gitalk-container"></div>
-    <script type="text/javascript">
-        const gitalk = new Gitalk({
-            clientID: 'b485a33b6a3308d5c214',
-            clientSecret: '923c6a495bf575255ea2ac743032769944000cfd',
-            repo: 'https://yangluom.github.io',
-            owner: 'yangluom',
-            admin: ['yangluom'],
-            id: md5(location.pathname),      // Ensure uniqueness and length less than 50
-            distractionFreeMode: false  // Facebook-like distraction free mode
-        })
- 
-        gitalk.render('gitalk-container')
-    </script>
-</div>
+  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '',
+  	clientSecret: '',
+  	repo: 'https://yangluom.github.io',
+  	owner: '',
+  	admin: [''],
+  	id: 'Thu Aug 29 2019 01:14:11 GMT+0800',
+  	distractionFreeMode: 'true'
+})
+gitalk.render('gitalk-container') 
+}
+</script>
   
   
   
