@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://i.loli.net/2019/08/20/kl2zvna5HmRtSUr.jpg">
 <meta property="og:image" content="https://i.loli.net/2019/08/20/CcQxgfmzB2Gdua4.jpg">
 <meta property="og:image" content="https://hexo-guide.readthedocs.io/zh_CN/latest/_images/register-github.png">
-<meta property="og:updated_time" content="2019-09-06T11:30:53.135Z">
+<meta property="og:updated_time" content="2019-09-06T12:37:19.673Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello-World之后">
 <meta name="twitter:description" content="0. 前言  知道Github能做博客已经有相当长一段时间了，但是，由于能力、精力等多种因素的限制，博客一直处于下图的状态：    说来，十分惭愧，这篇blog也已经从最初的8.09写到了08.12。  作为“Hello， World！”之后的第一篇博客，主要是给自己使用GitPage搭建Blog做个记录，当然，如果能够帮助到后来的小伙伴们，那就更好啦！  工欲善其事必先利其器，然额，贯于GitP">
@@ -50,7 +50,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#7A7A7A,#2868C9);
     }
   </style>
   
@@ -246,7 +246,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
         <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">8.5k字</span>
+        <span class="post-count" style="font-size: 16px;color: grey">8.9k字</span>
       </span>
     </span>
     
@@ -255,7 +255,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-        <span class="post-count" style="font-size: 16px;color: grey">40分</span>
+        <span class="post-count" style="font-size: 16px;color: grey">42分</span>
       </span>
     </span>
 </div>
@@ -498,6 +498,240 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aplayer&quot;</span><br><span class="line">  data-id=&quot;网易云歌单ID&quot;</span><br><span class="line">  data-server=&quot;netease&quot;    //可以更改为其他</span><br><span class="line">  data-type=&quot;playlist&quot;     //可以切换单曲或歌单</span><br><span class="line">  data-list-max-height=&quot;199px&quot;  //如果为歌单，规定歌单最大长度</span><br><span class="line">  data-list-folded=&quot;true&quot;  //歌单折叠</span><br><span class="line">  data-preload=&quot;auto&quot;      //歌单预载</span><br><span class="line">  data-loop=&quot;all&quot;          //歌单循环</span><br><span class="line">  data-autoplay=“false”    //自动播放</span><br><span class="line">  style=&quot;top:23%;&quot;&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 
 <p>如果想在移动端也加上播放列表，需要在theme/yilia/layout/_partial/mobile-nav.ejs第二行加上上面的代码。</p>
+<p>以上参数解释如下：</p>
+<blockquote>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>是否必须</th>
+<th>默认值</th>
+<th>描述&amp;可选值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>data-id</td>
+<td>是</td>
+<td></td>
+<td>单曲ID / 歌单ID / 专辑ID / 搜索关键词</td>
+</tr>
+<tr>
+<td>data-server</td>
+<td>是</td>
+<td></td>
+<td>音乐平台：<code>netease</code>,<code>tencent</code>,<code>kugou</code>,<code>xiami</code>,<code>baidu</code></td>
+</tr>
+<tr>
+<td>data-type</td>
+<td>是</td>
+<td></td>
+<td>音乐类型：<code>song</code>,<code>playlist</code>,<code>album</code>,<code>search</code>,<code>artist</code></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>data-autoplay</td>
+<td>否</td>
+<td><code>false</code></td>
+<td>是否自动播放，移动端浏览器不支持该选项</td>
+</tr>
+<tr>
+<td>data-mutex</td>
+<td>否</td>
+<td><code>true</code></td>
+<td>播放时是否暂停其他<code>APlayer</code>对象</td>
+</tr>
+<tr>
+<td>data-listmaxheight</td>
+<td>否</td>
+<td><code>340px</code></td>
+<td>播放列表最高高度</td>
+</tr>
+<tr>
+<td>data-preload</td>
+<td>否</td>
+<td><code>auto</code></td>
+<td>音乐预加载模式：<code>none</code>, <code>metadata</code>, <code>auto</code></td>
+</tr>
+<tr>
+<td>data-theme</td>
+<td>否</td>
+<td><code>#2980b9</code></td>
+<td>主题色</td>
+</tr>
+<tr>
+<td>data-mini</td>
+<td>否</td>
+<td><code>false</code></td>
+<td>是否开启迷你模式</td>
+</tr>
+<tr>
+<td>data-loop</td>
+<td>否</td>
+<td><code>all</code></td>
+<td>循环方式：<code>all</code>, <code>one</code>, <code>none</code></td>
+</tr>
+<tr>
+<td>data-order</td>
+<td>否</td>
+<td><code>list</code></td>
+<td>播放顺序：<code>list</code>, <code>random</code></td>
+</tr>
+<tr>
+<td>data-lrc</td>
+<td>否</td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td>data-list-folded</td>
+<td>否</td>
+<td><code>false</code></td>
+<td>歌单列表初始时是否折叠</td>
+</tr>
+<tr>
+<td>data-volume</td>
+<td>否</td>
+<td><code>0.7</code></td>
+<td>用户未自定义前的默认初始化音量</td>
+</tr>
+<tr>
+<td><code>&gt;&gt;</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+</blockquote>
+<p>配置参照这个官方表</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>container</td>
+<td>document.querySelector(‘.aplayer’)</td>
+<td>player container</td>
+</tr>
+<tr>
+<td>fixed</td>
+<td>false</td>
+<td>enable fixed mode, <a href="https://aplayer.js.org/#/home?id=fixed-mode" target="_blank" rel="noopener">see more details</a></td>
+</tr>
+<tr>
+<td>mini</td>
+<td>false</td>
+<td>enable mini mode, <a href="https://aplayer.js.org/#/home?id=mini-mode" target="_blank" rel="noopener">see more details</a></td>
+</tr>
+<tr>
+<td>autoplay</td>
+<td>false</td>
+<td>audio autoplay</td>
+</tr>
+<tr>
+<td>theme</td>
+<td>‘#b7daff’</td>
+<td>main color</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>‘all’</td>
+<td>player loop play, values: ‘all’, ‘one’, ‘none’</td>
+</tr>
+<tr>
+<td>order</td>
+<td>‘list’</td>
+<td>player play order, values: ‘list’, ‘random’</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>‘auto’</td>
+<td>values: ‘none’, ‘metadata’, ‘auto’</td>
+</tr>
+<tr>
+<td>volume</td>
+<td>0.7</td>
+<td>default volume, notice that player will remember user setting, default volume will not work after user set volume themselves</td>
+</tr>
+<tr>
+<td>audio</td>
+<td>-</td>
+<td>audio info, should be an object or object array</td>
+</tr>
+<tr>
+<td>audio.name</td>
+<td>-</td>
+<td>audio name</td>
+</tr>
+<tr>
+<td>audio.artist</td>
+<td>-</td>
+<td>audio artist</td>
+</tr>
+<tr>
+<td>audio.url</td>
+<td>-</td>
+<td>audio url</td>
+</tr>
+<tr>
+<td>audio.cover</td>
+<td>-</td>
+<td>audio cover</td>
+</tr>
+<tr>
+<td>audio.lrc</td>
+<td>-</td>
+<td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank" rel="noopener">see more details</a></td>
+</tr>
+<tr>
+<td>audio.theme</td>
+<td>-</td>
+<td>main color when switching to this audio, it has priority over the above theme</td>
+</tr>
+<tr>
+<td>audio.type</td>
+<td>‘auto’</td>
+<td>values: ‘auto’, ‘hls’, ‘normal’ or other custom type, <a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank" rel="noopener">see more details</a></td>
+</tr>
+<tr>
+<td>customAudioType</td>
+<td>-</td>
+<td><a href="https://aplayer.js.org/#/home?id=mse-support" target="_blank" rel="noopener">see more details</a></td>
+</tr>
+<tr>
+<td>mutex</td>
+<td>true</td>
+<td>prevent to play multiple player at the same time, pause other players when this player start play</td>
+</tr>
+<tr>
+<td>lrcType</td>
+<td>0</td>
+<td><a href="https://aplayer.js.org/#/home?id=lrc" target="_blank" rel="noopener">see more details</a></td>
+</tr>
+<tr>
+<td>listFolded</td>
+<td>false</td>
+<td>indicate whether list should folded at first</td>
+</tr>
+<tr>
+<td>listMaxHeight</td>
+<td>-</td>
+<td>list max height</td>
+</tr>
+<tr>
+<td>storageName</td>
+<td>‘aplayer-setting’</td>
+<td>localStorage key that store player setting</td>
+</tr>
+</tbody></table>
 <h2 id="2-7-增加了一个分类页面"><a href="#2-7-增加了一个分类页面" class="headerlink" title="2.7 增加了一个分类页面"></a>2.7 增加了一个分类页面</h2><h2 id="2-8-Yilia主题自定义左侧背景图片"><a href="#2-8-Yilia主题自定义左侧背景图片" class="headerlink" title="2.8 Yilia主题自定义左侧背景图片"></a>2.8 Yilia主题自定义左侧背景图片</h2><p>yilia模版左侧背景需要的话可以自己设置<br>首先打开themes\yilia\layout\layout.ejs<br>在最上面添加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;% var left_default = &apos;#fff&apos;; %&gt;</span><br></pre></td></tr></table></figure>
 
