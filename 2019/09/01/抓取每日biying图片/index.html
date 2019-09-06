@@ -126,6 +126,8 @@
         data-list-max-height="199px"  //如果为歌单，规定歌单最大长度
         data-list-folded="true"  //歌单折叠
         data-preload="auto"      //歌单预载
+		data-mutex="true"        //prevent to play multiple player at the same time, pause other players when this player start play
+		data-order="random"      //播放模式，也就是 “列表循环”，“单曲循环”，“随机播放”。
         data-loop="all"          //歌单循环
         data-autoplay=“false”    //自动播放
         style="top:23%;">
@@ -134,10 +136,6 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #00000"></div>
-	<div class="btnctn js-mobile-btnctn">
-  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
-	</div>
 	<div class="aplayer"
       data-id="113822843"
       data-server="netease"    //可以更改为其他
@@ -145,10 +143,16 @@
       data-list-max-height="199px"  //如果为歌单，规定歌单最大长度
       data-list-folded="true"  //歌单折叠
       data-preload="auto"      //歌单预载
+	  data-order="random"      
+	  data-mutex="true" 
       data-loop="all"          //歌单循环
       data-autoplay=“false”    //自动播放
       style="top:23%;">
     </div>
+  	<div class="overlay js-overlay" style="background: #00000"></div>
+	<div class="btnctn js-mobile-btnctn">
+  		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
+	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
