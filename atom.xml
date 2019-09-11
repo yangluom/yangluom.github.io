@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangluom.github.io/"/>
-  <updated>2019-09-10T15:11:03.907Z</updated>
+  <updated>2019-09-11T15:42:28.811Z</updated>
   <id>https://yangluom.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu里切换默认python版本</title>
+    <link href="https://yangluom.github.io/2019/09/11/Ubuntu%E9%87%8C%E5%88%87%E6%8D%A2%E9%BB%98%E8%AE%A4python%E7%89%88%E6%9C%AC/"/>
+    <id>https://yangluom.github.io/2019/09/11/Ubuntu里切换默认python版本/</id>
+    <published>2019-09-11T15:39:33.000Z</published>
+    <updated>2019-09-11T15:42:28.811Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Ubuntu里切换默认python版本"><a href="#Ubuntu里切换默认python版本" class="headerlink" title="Ubuntu里切换默认python版本"></a>Ubuntu里切换默认python版本</h1><p>Ubuntu里默认python为2.7，如何修改为python3版本呢？</p><p>可以利用alternatives机制更改py3为默认。</p><p>shell里执行以下命令即可：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 100 </span><br><span class="line">sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 150</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://yangluom.github.io/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://yangluom.github.io/tags/python/"/>
+    
+      <category term="shell" scheme="https://yangluom.github.io/tags/shell/"/>
+    
+  </entry>
   
   <entry>
     <title>调查就是解决问题</title>
