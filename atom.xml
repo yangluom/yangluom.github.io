@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>时间仍在，我们飞逝</title>
   
-  
+  <subtitle>每天进步一点点</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangluom.github.io/"/>
