@@ -130,8 +130,8 @@
         data-type="playlist"     //可以切换单曲或歌单
         data-list-max-height="199px"  //如果为歌单，规定歌单最大长度
         data-list-folded="true"  //歌单折叠
-        data-preload="auto"      //歌单预载
-		data-mutex="true"        //prevent to play multiple player at the same time, pause other players when this player start play
+        data-preload="none"      //歌单预载
+		data-mutex="true"        //互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
 		data-order="random"      //播放模式，也就是 “列表循环”，“单曲循环”，“随机播放”。
         data-loop="all"          //歌单循环
         data-autoplay=“false”    //自动播放
@@ -147,7 +147,7 @@
       data-type="playlist"     //可以切换单曲或歌单
       data-list-max-height="199px"  //如果为歌单，规定歌单最大长度
       data-list-folded="true"  //歌单折叠
-      data-preload="auto"      //歌单预载
+      data-preload="none"      //歌单预载
 	  data-order="random"      
 	  data-mutex="true" 
       data-loop="all"          //歌单循环
